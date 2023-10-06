@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лунный календарь</title>
+    <link rel="shortcut icon" href="./img/FullMoon_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@400;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="chief" class="chief">
+    <header>
+        <h1>Лунный календарь</h1>
+        <div id="user" class="user">
+        
+        <div id="AvatarPhoto" class="AvatarPhoto">
+            <span id="userSpan" class = "userSpan">Вход не выполнен</span>
+            <img class="AvatarPhoto" src="../MoonCalendar/img/FullMoon_icon.png" alt="аватар">
+        </div>
+        </div>
+    </header>
+    <div id="InfoPanel" class="InfoPanel">
+        <div class="InfoLine">
+            <span id="dataSpan" class="Zodiac">Сегодня:</span>
+            <p id="data" class="Zodiac pZodiac"></p>
+            <p id="MoonDay" class="Zodiac pZodiac">лунный день:</p>
+            <span id="MoonDaySpan" class="Zodiac">лунный день,</span>
+            <span id="MoonZodiacSpan" class="Zodiac">Луна в Знаке:</span>
+            <p id="MoonZodiac" class="Zodiac pZodiac">луна в Знаке</p>
+        </div>
+        
+    </div>
+    <main>
+        <div id="moonDayCont" class="moonMainCont">
+            <div id="CommandPanel" class="CommandPanel">
+                <button id="CommandBut1" class="CommandBut"><img src="./img/command/back.png" alt="Back" title="Предыдущий день"></button>
+                <button id="CommandBut2" class="CommandBut"><img src="./img/command/forward.png" alt="Forward" title="Следующий день"></button>
+                <button id="CommandBut3" class="CommandBut"><img src="./img/command/calendar1.png" alt="Calendar" title="Выбрать дату"></button>
+                <button id="CommandBut4" class="CommandBut"><img src="./img/command/listDay.png" alt="list" title="Все лунные дни"></button>
+                <button id="CommandBut5" class="CommandBut"><img src="./img/command/format.png" alt="edit" title="Редактировать"></button>
+                <button id="CommandBut6" class="CommandBut"><img src="./img/command/addNote.png" alt="Add note" title="Добавить заметку"></button>
+                <button id="CommandBut7" class="CommandBut"><img src="./img/command/diary.png" alt="Diary" title="Открыть дневник"></button>
+                <button id="CommandBut8" class="CommandBut"><img src="./img/command/contact_mini.png" alt="Chat" title="Открыть чат"></button>
+            </div>
+            <div>
+                <h3>лунный день</h3>
+                <span>Начало</span>
+                <input type="text">
+                <span>Завершение</span>
+                <input type="text">
+            </div>
+            <p>Символ дня:</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestiae, adipisci ex vitae ratione molestias. Fugit in facere, dolorem alias, tempore perferendis quia autem eius reiciendis voluptatum consectetur, voluptates minus!</p>
+        </div>
+        <div id="monZodiacCont" class="moonMainCont">
+            <h3>Луна в знаке: </h3>
+            <div>
+                <span>Начало</span>
+                <input type="text">
+                <span>Завершение</span>
+                <input type="text">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit dolores architecto sint ipsam non quaerat qui corrupti, ex debitis necessitatibus omnis quia nobis, unde magnam repellat beatae nulla corporis?</p>
+        </div>
+    </main>
+    <aside id="Zodiac" class="LeftBlock">
+        <div id="zodiacModal" class="zodiacModal">
+        <div class="zodiacContent">
+            <div id="modalTitle" class="modalTitle">
+                <span class="close">&times;</span>
+                <h2 id="modalH">Заголовок</h2>
+            </div>
+            <div id="modalInfo" class="modalInfo">
+                <img id="modalImg" class="modalImg" src="./img/phasa/III.jpg" alt="ntcn">
+                <p id="modalTxt" class="modaTxt">lorem 10000
+                   ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque quaerat reprehenderit voluptate architecto fuga natus aut asperiores illo ea nostrum porro modi dolor ut laboriosam quod quas, nesciunt sint?ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque quaerat reprehenderit voluptate architecto fuga natus aut asperiores illo ea nostrum porro modi dolor ut laboriosam quod quas, nesciunt sint?ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque quaerat reprehenderit voluptate architecto fuga natus aut asperiores illo ea nostrum porro modi dolor ut laboriosam quod quas, nesciunt sint?ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque quaerat reprehenderit voluptate architecto fuga natus aut asperiores illo ea nostrum porro modi dolor ut laboriosam quod quas, nesciunt sint?ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque quaerat reprehenderit voluptate architecto fuga natus aut asperiores illo ea nostrum porro modi dolor ut laboriosam quod quas, nesciunt sint?ipsum dolor sit, amet consectetur adipisicing elit. Neque cumque quaerat reprehenderit voluptate architecto fuga natus aut asperiores illo ea nostrum porro modi dolor ut laboriosam quod quas, nesciunt sint?</p>
+            </div>
+            <div class="modalBut">
+            <button id="modalBut1" class="modalBut">Вперед</button>
+            <button id="modalBut2" class="modalBut">Назад</button>
+            </div>
+        </div>
+        </div>
+        <button id="zodiac1"> <img class="zodiacImg" src="./img/Zodiac_png/001.png" alt="Овен"> </button>
+        <button id="zodiac2"><img class="zodiacImg"  src="./img/Zodiac_png/002.png" alt="Телец"></button>
+        <button id="zodiac3"><img class="zodiacImg"  src="./img/Zodiac_png/003.png" alt="Близницы"></button>
+        <button id="zodiac4"><img class="zodiacImg"  src="./img/Zodiac_png/004.png" alt="Рак"></button>
+        <button id="zodiac5"><img class="zodiacImg"  src="./img/Zodiac_png/005.png" alt="Лев"></button>
+        <button id="zodiac6"><img class="zodiacImg"  src="./img/Zodiac_png/006.png" alt="Дева"></button>
+        <button id="zodiac7"><img class="zodiacImg"  src="./img/Zodiac_png/007.png" alt="Весы"></button>
+        <button id="zodiac8"><img class="zodiacImg"  src="./img/Zodiac_png/008.png" alt="Скорпион"></button>
+        <button id="zodiac9"><img class="zodiacImg"  src="./img/Zodiac_png/009.png" alt="Стрелец"></button>
+        <button id="zodiac10"><img class="zodiacImg"  src="./img/Zodiac_png/010.png" alt="Козерог"></button>
+        <button id="zodiac11"><img class="zodiacImg"  src="./img/Zodiac_png/011.png" alt="Водолей"></button>
+        <button id="zodiac12"><img class="zodiacImg"  src="./img/Zodiac_png/012.png" alt="Рыба"></button>
+    </aside>
+    <aside id = "NotePad" class="RightBlock">
+        
+        <div id="phaseMoonInfo">
+            <button id="phaseMoonBut"><img id="MoonPhase" src="" alt="фаза Луны"></button>
+            <img id="MoonPhase1" src="./img/command/Group 1.png" alt="указатель">
+        </div>
+        <div id = "NotePadVideo">
+            <h3>Посмотреть видеозаметку</h3>
+       
+        </div>
+        <div id="phaseNote" class="phaseMoonInfo">
+            <div id="phaseNoteTitle" class="phaseMoonInfoTitle">
+            <h3>Заметки</h3>
+            <button id="titleBut" class="titleBut"><img class="titleBut titleButImg"src="./img/command/note.png" alt="Note" title="Открыть все заметки"></button>
+            </div>
+            <ol id="phasaList" class="phasaList">
+                <li class="phasaList">Заметка №1</li>
+                <li class="phasaList">Заметка №2</li>
+            </ol>
+        </div>
+    </aside>
+    <footer>
+        <div class="footerInfo">
+        <div class="gratitude">
+        <img src="./img/command/sun.jpg" alt="Благодарность">
+        <p>Сервис создан при творческой поддержке Грипекиной Е.Г. и творческом присутствии Жариковой Е.Н.</p>
+        </div>
+        <p>Автор и разработчик: <a href="https://t.me/Art_Verblud" target="_blank" title="Написать разработчику">Кваскова Н.Г.</a></p>
+        </div>
+        <div class="footerLink">
+        <a href="" target="_blank"><img id="referenceBut" src="./img/command/info_mini.jpg" alt="reference" title="Справка по работе с программой"></a>
+        <a href="https://api.whatsapp.com/send?phone=905348374204&text=Добрый%20день!" target="_blank" rel="noopener noreferrer"><img src="./img/command/whstsApp.png" alt="Связаться с разработчиком"title="Связаться с разработчиком"></a>
+        </div>
+        
+    </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

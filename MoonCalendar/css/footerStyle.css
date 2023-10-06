@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background:rgba(254, 230, 108, 0.1);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: -2;
+    border-top: 1px solid grey;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+.footerInfo{
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    gap: 5rem;
+    padding-left: 1rem;
+    /* padding-top: 1rem; */
+}
+.footerLink{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 1rem;
+   
+}
+a{
+    font-size: 1.4rem;
+}
+.footerLink img{
+width: 3rem;
+}
+.gratitude{
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+}
+.footerInfo p{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+}

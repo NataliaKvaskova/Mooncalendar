@@ -1,0 +1,51 @@
+.ReferenceMain{
+    display: grid;
+    grid-template-columns:60% 35%;
+    gap: 5%;
+    padding-left: 2rem;
+    height: 83%;
+}
+h3{
+    text-align: center;
+}
+ul, p, a{
+    font-size: 1.4rem;
+}
+.ref{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: end;
+    gap: 0.5rem;
+
+}
+.videoRef{
+    margin: 2rem;
+    padding-left: 4rem;
+    width: 100%;
+}
+.videoRef video{
+    width: 100%;
+    margin-top: 2rem;
+    
+}
+
+.butRef{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.list{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.videoText{
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+    
+}

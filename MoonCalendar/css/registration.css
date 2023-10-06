@@ -1,0 +1,65 @@
+
+
+.container{
+    height: 75%;
+    width: 90%;
+    background-color: white;
+    margin: 3rem auto;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+.container p{
+    font-size: 1.6rem;
+    text-align: center;
+   color: green;
+}
+
+label, span{
+    font-size: 1.6rem;
+}
+
+.rowGroup{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    /* border: 0.1rem solid grey; */
+    /* overflow: auto; */
+   
+}
+.rowFlex{
+    display: flex;
+    gap: 1rem;
+}
+label{
+    width: 30%;
+    text-align: end;
+}
+input, select{
+    width: 40%;
+    height: 3rem;
+    font-size: 1.4rem;
+}
+.butPos{
+    background-color: rgba(217, 251, 183, 1);
+    border-color: rgb(216, 254, 178);
+    width: 20rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    margin: 1.5rem 72%;
+
+}
+.divBut{
+    width: 60%;
+}
+.button.showRegPassword{
+    width: 3.2rem;
+}
+.error{
+    color: red;
+    font-size: 1.4rem;
+    text-align: center;
+    background: url(../img/command/icon-error.svg) no-repeat scroll 70%;
+    
+}

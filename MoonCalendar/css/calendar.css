@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.chief{ 
+    height: 82%;
+    display: grid;
+    grid-template-columns: 5% 75% 20%;
+}
+.CommandBut{
+    box-shadow: 0.1rem 0.2rem 0.3rem #c8c7c7;
+    background: #eeeeee;
+    border-radius: 0.5rem;
+    border-color: #c8c7c7;
+}
+.Zodiac{
+    font-size: 1.4rem;
+}
+.LeftBlock button{
+    box-shadow: 0.1rem 0.2rem 0.3rem #c8c7c7;
+    background: #eeeeee;
+    border-radius: 0.5rem;
+    border-color: #c8c7c7;
+}
+.zodiacModal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант */
+    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержание/коробка */
+  .zodiacContent {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    border-radius: 1rem;
+    border: 0.7rem solid rgba(254, 230, 108, 0.97);
+    box-shadow: 0.1rem 0.2rem 0.3rem #c8c7c7;
+    margin: 5% auto; /* 5% сверху и по центру */
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  }
+  .modalTitle{
+    background-color:rgba(254, 230, 108, 0.97) ;
+    height: 5rem;
+  }
+  #modalH{
+    width: 90%;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1.8rem;
+  }
+  .modalInfo{
+    /* display: flex;
+    gap: 1rem; */
+    margin: 1.5%;
+  }
+    .modalImg{
+     
+        border-radius: 0.5rem;
+        object-fit: none;
+        float: left;
+        
+    }
+    .modaTxt{
+        font-size: 1.6rem;
+        margin-left: 15rem;
+        line-height: 2.3rem;
+}
+    .modalBut{
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    margin: 0.5rem;
+    border-top: 0.1rem solid grey;
+}
+  .modalBut button{
+    width: 8rem;
+    background: rgba(249, 237, 178, 0.97);
+    border-radius: 0.5rem;
+    border-color: rgba(249, 237, 178, 0.97);
+    display: inline-block;
+  }
+  /* Кнопка закрытия */
+  .closeS {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeS:hover,
+  .closeS:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.RightBlock{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    grid-column-start: -1;
+    grid-column-end: -2;
+    margin-right: 0.1rem;
+    /* border-left: 0.05rem solid grey; */
+    /* padding-left: 0.1rem; */
+}
+#NotePadVideo h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    color: rgba(32, 168, 181, 1);
+}
+.phaseMoonInfo{
+    box-shadow: 1px 2px 3px #888;
+    background: #eeeeee;
+    width: 100%;
+    height: 40%;
+}
+.phaseMoonInfo h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0.2rem 0;
+    color: rgba(32, 168, 181, 1);
+}
+
+#phaseMoonBut{
+    width: 36%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #c8c7c7;
+    background: #eeeeee;
+    border-radius: 0.5rem;
+    border-color: #c8c7c7;
+    display: inline-block;
+}
+.RightBlock img{
+    object-fit: none;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+#phaseMoonInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0.6rem;
+
+}
+.phaseMoonInfoTitle{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+.titleBut{
+    box-shadow: 0.1rem 0.2rem 0.3rem #c8c7c7;
+    background: #eeeeee;
+    border-radius: 0.5rem;
+    border-color: #c8c7c7; 
+    display: inline-block;
+}
+.titleBut .titleButImg{
+    border-radius: 0;
+    border-width: 0;
+    object-fit: none;
+    vertical-align: middle;
+    box-shadow: none;
+}
+.phasaList{
+    list-style-image: url(../img/command/bulb_mini.png)
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+}
+.moonMainCont{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 50%;
+    padding-left: 1rem;
+}
+.CommandPanel{
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+.LeftBlock{
+    height: 90%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  
+
+}
+.zodiacImg {
+    width: 3rem;
+}
+
+p, span{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+

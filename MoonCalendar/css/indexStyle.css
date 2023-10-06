@@ -1,0 +1,145 @@
+.lineIn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin: 0 1.5rem;
+    height: 83%;
+    background-color: white;
+
+}
+.rolesDescription{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    /* margin-bottom: 0.1rem; */
+    position: relative;
+}
+.rolesDescriptionSpan{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: end;
+    color: rgba(32, 168, 181, 1);
+
+}
+.rolesDescriptionSpan:hover{
+    color: green;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.button.btnIndexRoles{
+    background-color: rgba(217, 251, 183, 1);
+    border-color: rgb(216, 254, 178);
+    /* background-color: rgb(203, 251, 232) ; */
+    width: 100%;
+    font-size: 1.5rem;
+}
+.mainIndex{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap: 6rem;
+  
+}
+.mainIndex1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ 
+}
+.mainIndex1 p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.mainIndex1a{
+    margin: 0 auto;
+}
+.mainIndex1a video{
+    width: 75%;
+    margin: 0 18%;
+}
+.mainIndex2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    border-left: 0.1rem solid grey;
+
+}
+.mainIndex2a{
+    display: flex;
+    margin-bottom: 1rem;
+}
+ul{
+    margin-top: 1rem;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(6, 87, 48);
+}
+h3{
+  font-size: 1.4rem;  
+  color: rgba(32, 168, 181, 1);
+}
+.greetings{
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+.listRef{
+    padding-left: 7rem;
+    padding-bottom: 1rem;
+    box-shadow: 1px 2px 3px #888;
+    background: #fefdfd;
+    margin-left: 4rem;
+    margin-bottom: 1.5rem;
+}
+.listRef p{
+font-size: 1.4rem;
+}
+.listRefItem{
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    list-style-image: url(../img/command/info_marker.jpg)
+}
+.openRef{
+    display: inline-block;
+    box-shadow: 1px 2px 3px #888;
+    background: rgba(217, 251, 183, 1);
+    width:3.5rem;
+    height: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left:88%;
+}
+.rolesDescription p{
+    font-size: 1.4rem;
+    background-color: rgb(237, 248, 243);
+    border-radius: 1rem;
+    position: absolute;
+    right: 35%;
+    z-index: 1;
+    width:30%;
+    padding: 1rem;
+    box-shadow: 0.1rem 0.2rem 0.3rem #c8c7c7;
+}
+
+.closeP {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .closeP:hover,
+  .closeP:focus {
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #butClose{
+   max-width: 3rem;
+    margin-left: 95%;
+  }
